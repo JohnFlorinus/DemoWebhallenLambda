@@ -4,6 +4,7 @@ namespace DemoWebhallenLambda.Classes
 {
     public class Product
     {
+        //Här skapar vi olika properties.
         public string Title { get; set; }
         public double Price { get; set; }
 

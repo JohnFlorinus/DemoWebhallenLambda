@@ -8,11 +8,12 @@ namespace DemoWebhallenLambda
         {
             InitializeComponent();
 
-            Repository repo = new Repository();
+            Repository repository = new Repository();
 
-            foreach(string category in repo.GetCategories())
+            foreach(string category in repository.GetCategories())
             {
                 comboBox1.Items.Add(category);
+                // Show the output
             }
         }
 

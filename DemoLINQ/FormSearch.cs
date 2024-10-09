@@ -18,6 +18,7 @@ namespace DemoWebhallenLambda
 
         private void buttonLambda_Click(object sender, EventArgs e)
         {
+            
             listBox1.Items.Clear();
             string category = comboBox1.Text;
             string condition = textBox1.Text;

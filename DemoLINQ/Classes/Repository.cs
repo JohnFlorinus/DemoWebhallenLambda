@@ -19,8 +19,8 @@ namespace DemoWebhallenLambda.Classes
         public List<Product> GetProducts()
         {
             List<Product> products = new List<Product>();
-
-            using (StreamReader reader = new StreamReader("gaming_products.json"))
+            // 
+            using (StreamReader reader = new StreamReader("..\\..\\..\\gaming_products.json"))
             {
                 //Läs upp alla rader i textfilen som en sträng
                 string productsJSON = reader.ReadToEnd();

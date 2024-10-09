@@ -4,7 +4,7 @@ namespace DemoWebhallenLambda.Classes
 {
     public class Product
     {
-        public string Headline { get; set; }
+        public string Title { get; set; }
         public double Price { get; set; }
 
         public string Category { get; set; }
@@ -18,7 +18,7 @@ namespace DemoWebhallenLambda.Classes
 
             products = allproducts
                 .Where(p => p.Category == category
-                && p.Headline.ToLower().Contains(condition.ToLower()))
+                && p.Title.ToLower().Contains(condition.ToLower()))
                 //&& p.Price>=min && p.Price<=max)
                 .ToList();
 

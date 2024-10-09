@@ -4,6 +4,7 @@ namespace DemoWebhallenLambda.Classes
 {
     public class Repository
     {
+        //Här skapar vi en lista
         public List<string> GetCategories()
         {
             var products = GetProducts();
@@ -15,7 +16,7 @@ namespace DemoWebhallenLambda.Classes
 
             return categories;
         }
-
+            //Här läser vi från filen
         public List<Product> GetProducts()
         {
             List<Product> products = new List<Product>();

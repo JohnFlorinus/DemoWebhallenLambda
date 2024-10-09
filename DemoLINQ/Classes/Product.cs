@@ -4,12 +4,14 @@ namespace DemoWebhallenLambda.Classes
 {
     public class Product
     {
-        public string Title { get; set; }
+        //Här skapar vi olika properties.
+        public string Headline { get; set; }
         public double Price { get; set; }
 
         public string Category { get; set; }
         public DateTime ReleaseDate { get; set; }
 
+        //Här gör vi en LAMBDA
         public static List<Product> Search(string category, string condition, int max, int min)
         {
             var products = new List<Product>();
@@ -18,7 +20,7 @@ namespace DemoWebhallenLambda.Classes
 
             products = allproducts
                 .Where(p => p.Category == category
-                && p.Title.ToLower().Contains(condition.ToLower()))
+                && p.Headline.ToLower().Contains(condition.ToLower()))
                 //&& p.Price>=min && p.Price<=max)
                 .ToList();
 
